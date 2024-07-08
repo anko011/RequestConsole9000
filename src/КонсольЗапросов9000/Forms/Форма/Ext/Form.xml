@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -35,6 +35,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКоманднаяПанельФормыРасширеннаяПодсказка" id="257"/>
@@ -156,6 +157,7 @@
 			</ToolTip>
 			<Width>100</Width>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаВерхняяПанельРасширеннаяПодсказка" id="24"/>
@@ -463,6 +465,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЗапросРасширеннаяПодсказка" id="46"/>
@@ -480,6 +483,7 @@
 									<v8:content>Группа запрос страницы</v8:content>
 								</v8:item>
 							</ToolTip>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаЗапросСтраницыРасширеннаяПодсказка" id="48"/>
 							<ChildItems>
 								<Page name="СтраницаЗапрос" id="49">
@@ -512,6 +516,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРедактированиеЗапросаРасширеннаяПодсказка" id="433"/>
@@ -530,6 +535,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаКоманднаяПанельСтраницыЗапросРасширеннаяПодсказка" id="482"/>
@@ -548,6 +554,7 @@
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаКоманднаяПанельЗапросаРасширеннаяПодсказка" id="480"/>
@@ -696,41 +703,21 @@
 														</v8:item>
 													</ToolTip>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаТекстЗапросаРасширеннаяПодсказка" id="476"/>
 													<ChildItems>
-														<TextDocumentField name="ТекстЗапроса" id="1">
-															<DataPath>ТекстЗапроса</DataPath>
+														<HTMLDocumentField name="ПолеРедактораЗапросов" id="512">
+															<DataPath>HTML</DataPath>
 															<TitleLocation>None</TitleLocation>
-															<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="2">
-																<ChildItems>
-																	<Button name="ТекстЗапросаКонтекстноеМенюКонструкторЗапросов" id="216">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>Form.Command.КонструкторЗапросов</CommandName>
-																		<ExtendedTooltip name="ТекстЗапросаКонтекстноеМенюКонструкторЗапросовРасширеннаяПодсказка" id="217"/>
-																	</Button>
-																	<Button name="ТекстЗапросаКонтекстноеМенюСинтаксическийКонтрольЗапроса" id="218">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>Form.Command.СинтаксическийКонтрольЗапроса</CommandName>
-																		<ExtendedTooltip name="ТекстЗапросаКонтекстноеМенюСинтаксическийКонтрольЗапросаРасширеннаяПодсказка" id="219"/>
-																	</Button>
-																	<Button name="ТекстЗапросаКонтекстноеМенюФорматироватьТекстЗапроса" id="220">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>Form.Command.ФорматироватьТекстЗапроса</CommandName>
-																		<Picture>
-																			<xr:Abs>Picture.zip</xr:Abs>
-																			<xr:LoadTransparent>false</xr:LoadTransparent>
-																		</Picture>
-																		<ExtendedTooltip name="ТекстЗапросаКонтекстноеМенюФорматироватьТекстЗапросаРасширеннаяПодсказка" id="221"/>
-																	</Button>
-																</ChildItems>
-															</ContextMenu>
-															<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="3"/>
+															<ContextMenu name="ПолеРедактораЗапросовКонтекстноеМеню" id="513"/>
+															<ExtendedTooltip name="ПолеРедактораЗапросовРасширеннаяПодсказка" id="514"/>
 															<Events>
-																<Event name="OnChange">ТекстЗапросаПриИзменении</Event>
+																<Event name="DocumentComplete">ПолеРедактораЗапросовДокументСформирован</Event>
+																<Event name="OnClick">ПолеРедактораЗапросовПриНажатии</Event>
 															</Events>
-														</TextDocumentField>
+														</HTMLDocumentField>
 														<UsualGroup name="ГруппаПараметры" id="434">
 															<Title>
 																<v8:item>
@@ -747,6 +734,7 @@
 															<Width>30</Width>
 															<Group>Vertical</Group>
 															<ChildrenAlign>None</ChildrenAlign>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="435"/>
@@ -812,6 +800,11 @@
 																				<CommandName>Form.Command.ПараметрыОчистить</CommandName>
 																				<ExtendedTooltip name="ПараметрыЗапросаПараметрыОчиститьРасширеннаяПодсказка" id="143"/>
 																			</Button>
+																			<Button name="ПараметрыЗапросаОткрытьФормуСписка" id="507">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ОткрытьФормуСписка</CommandName>
+																				<ExtendedTooltip name="ПараметрыЗапросаОткрытьФормуСпискаРасширеннаяПодсказка" id="508"/>
+																			</Button>
 																		</ChildItems>
 																	</AutoCommandBar>
 																	<ExtendedTooltip name="ПараметрыЗапросаРасширеннаяПодсказка" id="56"/>
@@ -840,6 +833,7 @@
 																		<ExtendedTooltip name="ПараметрыЗапросаУправлениеПоискомРасширеннаяПодсказка" id="65"/>
 																	</SearchControlAddition>
 																	<Events>
+																		<Event name="Selection">ПараметрыЗапросаВыбор</Event>
 																		<Event name="BeforeEditEnd">ПараметрыЗапросаПередОкончаниемРедактирования</Event>
 																		<Event name="OnActivateRow">ПараметрыЗапросаПриАктивизацииСтроки</Event>
 																		<Event name="OnStartEdit">ПараметрыЗапросаПриНачалеРедактирования</Event>
@@ -896,6 +890,23 @@
 																				<Event name="ChoiceProcessing">ПараметрыЗапросаЗначениеОбработкаВыбора</Event>
 																			</Events>
 																		</InputField>
+																		<PictureField name="ПараметрыЗапросаКнопкаКДанным" id="509">
+																			<DataPath>ПараметрыЗапроса.КнопкаКДанным</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content> </v8:content>
+																				</v8:item>
+																			</Title>
+																			<EditMode>EnterOnInput</EditMode>
+																			<Hyperlink>true</Hyperlink>
+																			<ValuesPicture>
+																				<xr:Ref>StdPicture.QueryWizardTempTable</xr:Ref>
+																				<xr:LoadTransparent>true</xr:LoadTransparent>
+																			</ValuesPicture>
+																			<ContextMenu name="ПараметрыЗапросаКнопкаКДаннымКонтекстноеМеню" id="510"/>
+																			<ExtendedTooltip name="ПараметрыЗапросаКнопкаКДаннымРасширеннаяПодсказка" id="511"/>
+																		</PictureField>
 																	</ChildItems>
 																</Table>
 															</ChildItems>
@@ -1058,6 +1069,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ВерхняяПанельКодаРасширеннаяПодсказка" id="370"/>
@@ -1133,6 +1145,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПанельИсполненияРасширеннаяПодсказка" id="383"/>
@@ -1224,19 +1237,21 @@
 												</v8:item>
 											</ToolTip>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаТекстаАлгоритмаРасширеннаяПодсказка" id="500"/>
 											<ChildItems>
-												<TextDocumentField name="ТекстАлгоритм" id="358">
-													<DataPath>ТекстАлгоритм</DataPath>
+												<HTMLDocumentField name="ПолеРедактораАлгоритма" id="515">
+													<DataPath>HTML</DataPath>
 													<TitleLocation>None</TitleLocation>
-													<ContextMenu name="ТекстАлгоритмКонтекстноеМеню" id="359"/>
-													<ExtendedTooltip name="ТекстАлгоритмРасширеннаяПодсказка" id="360"/>
+													<ContextMenu name="ПолеРедактораАлгоритмаКонтекстноеМеню" id="516"/>
+													<ExtendedTooltip name="ПолеРедактораАлгоритмаРасширеннаяПодсказка" id="517"/>
 													<Events>
-														<Event name="OnChange">ТекстАлгоритмПриИзменении</Event>
+														<Event name="DocumentComplete">ПолеРедактораАлгоритмаДокументСформирован</Event>
+														<Event name="OnClick">ПолеРедактораАлгоритмаПриНажатии</Event>
 													</Events>
-												</TextDocumentField>
+												</HTMLDocumentField>
 												<Table name="СтруктураЗаписиРезультата" id="483">
 													<Representation>Tree</Representation>
 													<ReadOnly>true</ReadOnly>
@@ -1319,6 +1334,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНижняяПанельРасширеннаяПодсказка" id="26"/>
@@ -1338,6 +1354,7 @@
 					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГраппуКоманднаяПанельРезультатаРасширеннаяПодсказка" id="236"/>
@@ -1356,6 +1373,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="КоманднаяПанельЛевоРасширеннаяПодсказка" id="249"/>
@@ -1373,6 +1391,7 @@
 											<v8:content>Группа управление результатом запроса</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаУправлениеРезультатомЗапросаРасширеннаяПодсказка" id="427"/>
@@ -1416,6 +1435,7 @@
 													<v8:content>Группа результат в пакете</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРезультатВПакетеРасширеннаяПодсказка" id="506"/>
@@ -1459,6 +1479,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<ShowTitle>false</ShowTitle>
 									<BackColor>style:NavigationColor</BackColor>
 									<ExtendedTooltip name="КоманднаяПанельВидРезультатаРасширеннаяПодсказка" id="397"/>
@@ -1610,6 +1631,7 @@
 							</ToolTip>
 							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="КоманднаяПанельПравоРасширеннаяПодсказка" id="251"/>
@@ -1717,6 +1739,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="423"/>
@@ -1805,6 +1828,7 @@
 									<v8:content>Группа таблица</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаТаблицаРасширеннаяПодсказка" id="431"/>
@@ -1953,6 +1977,7 @@
 					<v8:content>Группа картинки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="349"/>
@@ -2386,6 +2411,21 @@
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КнопкаКДанным" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопка к данным</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
@@ -3169,6 +3209,153 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="КаталогИсходныхФайловРедактора" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог исходных файлов редактора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияОбработки" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HTML" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеРедактораЗапросаИнициализировано" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле редактора запроса инициализировано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсходныеФайлыРедактораЗагружены" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходные файлы редактора загружены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресМакетаИсходныхФайловРедактора" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес макета исходных файлов редактора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеРедактораАлгоритмаИнициализировано" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле редактора алгоритма инициализировано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазделительПути" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделитель пути</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИменаОбщихМодулей" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имена общих модулей</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КаталогИсходногоКодаКонфигурации" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог исходного кода конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИндексныйФайл" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индексный файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -3922,6 +4109,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьФайлыТехнологическогоЖурналаКонсоли</Action>
+		</Command>
+		<Command name="ОткрытьФормуСписка" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму списка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуСписка</Action>
 		</Command>
 	</Commands>
 </Form>
