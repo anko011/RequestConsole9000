@@ -836,7 +836,6 @@
 																		<Event name="Selection">ПараметрыЗапросаВыбор</Event>
 																		<Event name="BeforeEditEnd">ПараметрыЗапросаПередОкончаниемРедактирования</Event>
 																		<Event name="OnActivateRow">ПараметрыЗапросаПриАктивизацииСтроки</Event>
-																		<Event name="OnStartEdit">ПараметрыЗапросаПриНачалеРедактирования</Event>
 																		<Event name="OnChange">ПараметрыЗапросаПриИзменении</Event>
 																	</Events>
 																	<ChildItems>
@@ -880,6 +879,7 @@
 																			<DataPath>ПараметрыЗапроса.Значение</DataPath>
 																			<EditMode>Directly</EditMode>
 																			<ClearButton>true</ClearButton>
+																			<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
 																			<ContextMenu name="ПараметрыЗапросаЗначениеКонтекстноеМеню" id="70"/>
 																			<ExtendedTooltip name="ПараметрыЗапросаЗначениеРасширеннаяПодсказка" id="71"/>
 																			<Events>
